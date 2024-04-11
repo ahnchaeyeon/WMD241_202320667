@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+.card.card--color-blue {
+  background-color: oklch(98% 0.025 200);
+}
+
+.card {
+  max-width: 25rem;
+  background-color: oklch(98% 0.025 90);
+  overflow-y: hidden;
+  margin-top: 3rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.card:first-child {
+  margin-top: 0;
+}
+
+.card__img {
+  max-width: 100%;
+}
+
+.card__top {
+  padding-block: 0.75rem;
+  padding-inline: 1rem;
+}
+
+.card__bottom {
+  padding-block: 1rem;
+  padding-inline: 1rem;
+}
+
+.card__tittle {
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.card__subtittle {
+  margin-top: 0;
+}
+
+.card__botto .card__tittle {
+  line-height: 1.5rem;
+}
