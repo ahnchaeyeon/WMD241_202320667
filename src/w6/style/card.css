@@ -42,6 +42,7 @@
   margin-top: 0;
 }
 
-.card__botto .card__tittle {
+.card__bottom .card__tittle {
   line-height: 1.5rem;
+  color: oklch(50% 0.01 60deg);
 }
