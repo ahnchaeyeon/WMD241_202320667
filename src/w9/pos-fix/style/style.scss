@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-block: 0;
+}
+
+.fixed {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #ff0000;
+  position: fixed;
+
+  &:nth-child(1) {
+    bottom: 32px;
+    right: 32px;
+  }
+  &:nth-child(2) {
+  }
+}
+.contaniner {
+  max-width: 60rem;
+  margin-inline: auto;
+  padding-block: 1.25rem;
+  padding-inline: 5rem;
+  background-color: oklch(0.95 0 0);
+}
