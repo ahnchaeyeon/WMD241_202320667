@@ -1,0 +1,40 @@
+:root {
+  --card-m-y: 1rem;
+  --card-m-x: 1.5rem;
+}
+
+.card {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 150%;
+  border-radius: 0.75rem;
+  .section--opt-pos-rel & {
+    positon: relative;
+    &:nth-child(1) {
+      left: 1rem;
+    }
+  }
+  .section--opt-margin-negative & {
+    margin-top: -10rem;
+    position: relative;
+    &:first-child {
+      margin-top: 0;
+    }
+    @for $i from 1 through 100 {
+      &:nth-child(#{$i}) {
+        z-index: #{$i};
+      }
+    }
+  }
+  &:nth-child(1) {
+    margin-top: 0;
+  }
+  &__tittle {
+    font-weight: 600;
+  }
+  &__subtittle {
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: oklch(0.5 0 0);
+  }
+}
